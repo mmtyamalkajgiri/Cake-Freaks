@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Freaks | Homemade Cakes Crafted with Love</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#ff4f81;
+    --secondary:#fff0f5;
+    --dark:#2d2d2d;
+    --light:#ffffff;
+    --accent:#ffd166;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:var(--dark);
+    background:#fff;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.logo span{
+    color:#ff9f1c;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(255,79,129,.75),rgba(255,79,129,.75)),
+    url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:120px 20px 80px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:white;
+    color:var(--primary);
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:var(--primary);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:var(--primary);
+    font-weight:700;
+    margin-top:10px;
+}
+
+.about{
+    background:var(--secondary);
+    border-radius:25px;
+    text-align:center;
+    max-width:1000px;
+    margin:auto;
+    padding:50px;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.testimonial{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.cta{
+    background:linear-gradient(135deg,#ff4f81,#ff7eb3);
+    color:white;
+    text-align:center;
+    border-radius:25px;
+    padding:60px 30px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+.about{
+    padding:30px 20px;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Cake <span>Freaks</span> 🎂</div>
+
+        <div class="nav-links">
+            <a href="#cakes">Cakes</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Cake Freaks</h1>
+        <p>
+            Homemade cakes baked fresh with love, creativity, and the finest ingredients.
+            Perfect for birthdays, anniversaries, weddings, and every sweet celebration.
+        </p>
+
+        <a href="#contact" class="btn">Order Your Cake</a>
+    </div>
+</section>
+
+<section id="cakes">
+    <h2 class="section-title">Our Signature Cakes</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Chocolate Dream Cake</h3>
+                <p>Rich chocolate sponge layered with silky ganache.</p>
+                <div class="price">Starting ₹899</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Red Velvet Delight</h3>
+                <p>Classic red velvet topped with cream cheese frosting.</p>
+                <div class="price">Starting ₹999</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Custom Celebration Cake</h3>
+                <p>Designed specially for your memorable occasions.</p>
+                <div class="price">Custom Pricing</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">Why Cake Freaks?</h2>
+
+    <div class="about">
+        <p>
+            At <strong>Cake Freaks</strong>, every cake is handcrafted from scratch
+            using premium ingredients and a passion for baking. We specialize in
+            custom-designed cakes, birthday cakes, anniversary cakes, cupcakes,
+            and dessert boxes tailored to your taste and theme.
+        </p>
+    </div>
+</section>
+
+<section id="reviews">
+    <h2 class="section-title">Happy Customers</h2>
+
+    <div class="testimonials">
+
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>"Beautiful design and amazing taste. Everyone loved the cake!"</p>
+            <strong>- Priya</strong>
+        </div>
+
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>"The best homemade chocolate cake we've ever had."</p>
+            <strong>- Rahul</strong>
+        </div>
+
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>"Perfect custom birthday cake delivered on time."</p>
+            <strong>- Sneha</strong>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="cta">
+        <h2>Ready for Something Sweet?</h2>
+        <p style="margin:15px 0 25px;">
+            Place your order today and make your celebration unforgettable.
+        </p>
+
+        <a href="#contact" class="btn">Order Now</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact">
+        <p><strong>📞 Phone:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>📧 Email:</strong> hello@cakefreaks.com</p>
+        <p><strong>📍 Location:</strong> Andhra Pradesh, India</p>
+        <p><strong>📸 Instagram:</strong> @cakefreaks</p>
+
+        <br>
+
+        <a href="https://wa.me/919999999999" class="btn">
+            Order on WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Cake Freaks • Homemade Cakes Crafted with Love ❤️
+</footer>
+
+</body>
+</html>
